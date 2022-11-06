@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>dream</title>
 </head>
@@ -32,8 +30,8 @@
             </div>
             
         </div>
-        <img id="b" class="p" src="asets/fondo2.PNG" alt="" style="height: 125%;">
-        <img id="p" class="p" src="asets/IMG-5623.PNG" alt="" style="height: 125%;">
+        <img id="img2" class="p" src="asets/fondo2.PNG" alt="" style="height: 125%;">
+        <img id="img1" class="p" src="asets/IMG-5623.PNG" alt="" style="height: 125%;">
         
 
 
@@ -41,7 +39,6 @@
     <script>
         var bSi = document.getElementById("si");
         var rep = document.getElementById("replace");
-        var b = document.getElementById("b");
 
         bSi.addEventListener(onclick);
         
@@ -61,13 +58,15 @@
         function No() {
             if (document.getElementById("r").style.display == "block") {
                 document.getElementById("r").style.display = "none";
-                document.getElementById("p").style.display = "block"
-                b.style.display = "none"
+
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img1").style.display = "block";
             } else {
                 document.getElementById("r").style.display = "block";
-                b.style.display = "block"
                 document.getElementById("v").style.display = "none";
-                document.getElementById("p").style.display = "none"
+                
+                document.getElementById("img2").style.display = "block";
+                document.getElementById("img1").style.display = "none";
             }
         }
 
