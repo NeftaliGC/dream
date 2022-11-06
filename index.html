@@ -7,31 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>dream</title>
 </head>
     <body >
-        <img src="asets/IMG-5623.PNG" alt="" style="height: 100%; display: flex;">
-     
-            <div id="p" style="text-align: center;">
-                <h1 style="text-align: center; color: rgb(218, 214, 214); font-family: 'Dancing Script', cursive; font-size: 80px;" >¿Quieres recordar tus sueños?</h1>
         
-                <div style="text-align: center;">
-    
-                        <button id="si" onclick=agregarVideo(); style="font-family: 'Dancing Script', cursive;">Si</button>
-    
-                        <button id="no" onclick=No(); style="font-family: 'Dancing Script', cursive";>No</button>
-    
-                </div>
-        
-                <div id="v" style="text-align: center; margin-top: 20%">
-                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mCdA4bJAGGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div id="r" style="text-align: center;">
-                    <h2 style="font-family: 'Dancing Script', cursive;">No me hagas perder el tiempo</h2>
-                </div>
+        <div style="text-align: center; z-index: 3;">
+            <h1 style="text-align: center; color: rgb(218, 214, 214); font-family: 'Dancing Script', cursive; font-size: 78px;" >¿Quieres recordar tus sueños?</h1>
+            
+            <div style="text-align: center;">
+                <button id="si" onclick=agregarVideo(); style="font-family: 'Dancing Script', cursive;">Si</button>
                 
+                <button id="no" onclick=No(); style="font-family: 'Dancing Script', cursive";>No</button>
             </div>
+                
+            <div id="v" style="text-align: center; margin-top: 0">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rUHxLrZwSIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="r" style="text-align: center;">
+                <h2 style="font-family: 'Dancing Script', cursive; color: rgb(255, 255, 255); font-size: 40px">¿Entonces para que me haces perder mi tiempo? ...</h2>
+            </div>
+            
+        </div>
+        <img id="b" class="p" src="asets/fondo2.PNG" alt="" style="height: 125%;">
+        <img id="p" class="p" src="asets/IMG-5623.PNG" alt="" style="height: 125%;">
         
 
 
@@ -39,6 +41,7 @@
     <script>
         var bSi = document.getElementById("si");
         var rep = document.getElementById("replace");
+        var b = document.getElementById("b");
 
         bSi.addEventListener(onclick);
         
@@ -58,9 +61,13 @@
         function No() {
             if (document.getElementById("r").style.display == "block") {
                 document.getElementById("r").style.display = "none";
+                document.getElementById("p").style.display = "block"
+                b.style.display = "none"
             } else {
                 document.getElementById("r").style.display = "block";
+                b.style.display = "block"
                 document.getElementById("v").style.display = "none";
+                document.getElementById("p").style.display = "none"
             }
         }
 

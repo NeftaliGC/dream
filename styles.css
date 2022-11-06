@@ -4,11 +4,11 @@ html, body{
     display: flex;
     flex-direction: column;
   }
-  #p{
+  .p{
     position: fixed;
-    z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+    z-index: 1; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
                 valor 1*/
-    margin-left: calc(28%);/*Con este margen posicionamos el div donde queramos*/
+    margin: auto;/*Con este margen posicionamos el div donde queramos*/
   }
 
   #si, #no{
