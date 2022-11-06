@@ -22,7 +22,7 @@
             </div>
                 
             <div id="v" style="text-align: center; margin-top: 0">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rUHxLrZwSIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="ifr" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div id="r" style="text-align: center;">
@@ -45,9 +45,11 @@
         function agregarVideo() {
             if (document.getElementById("v").style.display == "block") {
                 document.getElementById("v").style.display = "none";
+                document.getElementById("ifr").src = ""
             } else {
                 document.getElementById("v").style.display = "block";
                 document.getElementById("r").style.display = "none";
+                document.getElementById("ifr").src = "https://www.youtube.com/embed/rUHxLrZwSIY?&autoplay=1"
             }
         }
 
