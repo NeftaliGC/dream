@@ -1,0 +1,24 @@
+html, body{
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #p{
+    position: fixed;
+    z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+    margin-left: calc(28%);/*Con este margen posicionamos el div donde queramos*/
+  }
+
+  #si, #no{
+    margin: -5% 13% auto 13%;
+    font-size: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+
+  #v, #r {
+    display: none;
+  }

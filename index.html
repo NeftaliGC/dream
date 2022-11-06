@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>dream</title>
+</head>
+    <body >
+        <img src="asets/IMG-5623.PNG" alt="" style="height: 100%; display: flex;">
+        <div id="p">
+            <h1 style="text-align: center; color: rgb(218, 214, 214); font-family: 'Dancing Script', cursive; font-size: 80px;" >¿Quieres recordar tus sueños?</h1>
+    
+            <div style="text-align: center;">
+                <button id="si" onclick=agregarVideo(); style="font-family: 'Dancing Script', cursive;">Si</button>
+                <button id="no" onclick=No(); style="font-family: 'Dancing Script', cursive";>No</button>
+            </div>
+    
+            <div id="v" style="text-align: center; margin-top: 20%">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mCdA4bJAGGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="r" style="text-align: center;">
+                <h2 style="font-family: 'Dancing Script', cursive;">No me hagas perder el tiempo</h2>
+            </div>
+            
+        </div>
+
+
+    </body>
+    <script>
+        var bSi = document.getElementById("si");
+        var rep = document.getElementById("replace");
+
+        bSi.addEventListener(onclick);
+        
+        function agregarVideo() {
+            if (document.getElementById("v").style.display == "block") {
+                document.getElementById("v").style.display = "none";
+            } else {
+                document.getElementById("v").style.display = "block";
+                document.getElementById("r").style.display = "none";
+            }
+        }
+
+        var bNo = document.getElementById("no");
+
+        bNo.addEventListener(onclick);
+        
+        function No() {
+            if (document.getElementById("r").style.display == "block") {
+                document.getElementById("r").style.display = "none";
+            } else {
+                document.getElementById("r").style.display = "block";
+                document.getElementById("v").style.display = "none";
+            }
+        }
+    </script>
+</html>
