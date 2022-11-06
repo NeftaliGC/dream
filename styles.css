@@ -12,11 +12,18 @@ html, body{
   }
 
   #si, #no{
-    margin: -5% 13% auto 13%;
+    margin: auto 13% auto 13%;
     font-size: 40px;
     background-color: transparent;
     border-color: transparent;
     color: rgb(255, 255, 255);
+  }
+
+  #no:hover {
+    color: yellow;
+  }
+  #si:hover {
+    color: yellow;
   }
 
   #v, #r {

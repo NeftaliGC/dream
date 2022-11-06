@@ -12,22 +12,27 @@
 </head>
     <body >
         <img src="asets/IMG-5623.PNG" alt="" style="height: 100%; display: flex;">
-        <div id="p">
-            <h1 style="text-align: center; color: rgb(218, 214, 214); font-family: 'Dancing Script', cursive; font-size: 80px;" >¿Quieres recordar tus sueños?</h1>
+     
+            <div id="p" style="text-align: center;">
+                <h1 style="text-align: center; color: rgb(218, 214, 214); font-family: 'Dancing Script', cursive; font-size: 80px;" >¿Quieres recordar tus sueños?</h1>
+        
+                <div style="text-align: center;">
     
-            <div style="text-align: center;">
-                <button id="si" onclick=agregarVideo(); style="font-family: 'Dancing Script', cursive;">Si</button>
-                <button id="no" onclick=No(); style="font-family: 'Dancing Script', cursive";>No</button>
-            </div>
+                        <button id="si" onclick=agregarVideo(); style="font-family: 'Dancing Script', cursive;">Si</button>
     
-            <div id="v" style="text-align: center; margin-top: 20%">
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mCdA4bJAGGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <button id="no" onclick=No(); style="font-family: 'Dancing Script', cursive";>No</button>
+    
+                </div>
+        
+                <div id="v" style="text-align: center; margin-top: 20%">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mCdA4bJAGGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="r" style="text-align: center;">
+                    <h2 style="font-family: 'Dancing Script', cursive;">No me hagas perder el tiempo</h2>
+                </div>
+                
             </div>
-            <div id="r" style="text-align: center;">
-                <h2 style="font-family: 'Dancing Script', cursive;">No me hagas perder el tiempo</h2>
-            </div>
-            
-        </div>
+        
 
 
     </body>
@@ -58,5 +63,6 @@
                 document.getElementById("v").style.display = "none";
             }
         }
+
     </script>
 </html>
